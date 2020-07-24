@@ -1,0 +1,14 @@
+#!/bin/bash
+# Jupyter doesn't seem to pick up site-packages in the virtual environment. So put it in the PYTHONPATH.
+PYTHONPATH=`pwd`:'/home/ubuntu/Model-Testing/mt/lib/python3.6/site-packages/teUtils-0.85-py3.6.egg'
+PYTHONPATH=${PYTHONPATH}:'/home/ubuntu/Model-Testing/mt/lib/python3.6/site-packages'
+PYTHONPATH=${PYTHONPATH}:'/home/ubuntu/Model-Testing/mt/lib/python3.6/site-packages/teUtils-0.85-py3.6.egg'
+PYTHONPATH=${PYTHONPATH}:'/home/ubuntu/Model-Testing/mt/lib/python3.6/site-packages/lmfit-1.0.1-py3.6.egg'
+PYTHONPATH=${PYTHONPATH}:'/home/ubuntu/Model-Testing/mt/lib/python3.6/site-packages/tabulate-0.8.7-py3.6.egg'
+PYTHONPATH=${PYTHONPATH}:'/home/ubuntu/Model-Testing/mt/lib/python3.6/site-packages/asteval-0.9.18-py3.6.egg'
+PYTHONPATH=${PYTHONPATH}:'/home/ubuntu/Model-Testing/mt/lib/python3.6/site-packages/future-0.18.2-py3.6.egg'
+PYTHONPATH=${PYTHONPATH}:'/home/ubuntu/Model-Testing/mt/lib/python3.6/site-packages/IPython/extensions'
+PYTHONPATH=${PYTHONPATH}:'/home/ubuntu/Model-Testing/mt/lib/python3.6/site-packages/tesbml'
+PYTHONPATH=${PYTHONPATH}:'/home/ubuntu/Model-Testing/mt/lib/python3.6/site-packages/uncertainties-3.1.4-py3.6.egg'
+export PYTHONPATH
+jupyter notebook
